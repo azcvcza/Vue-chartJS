@@ -1,23 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <j-header></j-header>
+    <router-view :key="$route.path"></router-view>
+    <j-footer></j-footer>
   </div>
 </template>
 
 <script>
+import JHeader from '@/components/Header'
+import JFooter from '@/components/Footer'
 export default {
-  name: 'App'
+  components: { JHeader, JFooter },
+  name: 'app',
+  metaInfo: {
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'theme-color', content: '#ffffff' }
+    ]
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import "/assets/styles/_variables.scss";
+  .Cookie__button {
+    background: color(robin-egg-blue)!important;
+    @include hover-active-states() {
+      background: darken(color(robin-egg-blue), 10%)!important;
+    }
+  }
 </style>
