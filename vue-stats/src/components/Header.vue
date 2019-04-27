@@ -20,14 +20,11 @@
 </script>
 
 <style lang="scss">
-  @import "../assets/styles/_variables.scss";
+  
   .Header {
     padding: rem(30) rem(40);
     display: flex;
     justify-content: center;
-    @include has(logo) {
-      font-size: rem(16);
-      font-weight: 600;
-    }
+    
   }
 </style>

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Meta from 'vue-meta'
-import StartPage from '@/pages/StartPage'
-import HelloWorld from '@/components/HelloWorld'
+import StartPage from '@/pages/Start'
+
 
 Vue.use(Router)
 

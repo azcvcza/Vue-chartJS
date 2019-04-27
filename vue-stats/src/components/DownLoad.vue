@@ -25,16 +25,17 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import "../assets/styles/_variables.scss";
-  .Chart__download {
+<style  scoped>
+  .Chart__download
+   {
     cursor: pointer;
     border: 1px solid #f1f1f1;
     border-radius: rem(5);
     padding: rem(5);
     text-decoration: none;
-    &:hover {
-      border-color: color(robin-egg-blue);
-    }
+   
   }
+   .Chart__download:hover {
+      border-color: yellow;
+    }
 </style>

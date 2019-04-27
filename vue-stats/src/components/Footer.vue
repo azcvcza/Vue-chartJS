@@ -11,8 +11,8 @@
   }
 </script>
 
-<style lang="scss">
-  @import "../assets/styles/_variables.scss";
+<style lang="css">
+ 
   footer {
     background-color: color(fjord);
     color: #fff;
@@ -21,11 +21,13 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-    a {
-      color: color(robin-egg-blue);
-      @include hover-active-states {
-        background: darken(color(robin-egg-blue), 20%);
-      }
+    
+  }
+  footer a {
+      color: lightskyblue;
+      
     }
+  footer a:hover{
+    border-color: beige
   }
 </style>

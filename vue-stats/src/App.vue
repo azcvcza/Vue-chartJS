@@ -22,11 +22,12 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "/assets/styles/_variables.scss";
+  
   .Cookie__button {
-    background: color(robin-egg-blue)!important;
-    @include hover-active-states() {
-      background: darken(color(robin-egg-blue), 10%)!important;
-    }
+    background: yellow!important;
+    
+  }
+  .Cookie__button:hover{
+    background: greenyellow;
   }
 </style>
