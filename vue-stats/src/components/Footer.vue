@@ -1,8 +1,8 @@
 <template>
   <footer>
    <span> Build with <a href="https://vuejs.org/" target="_new">Vue.js</a> and <a href="http://vue-chartjs.org/#/" target="_new">vue-chartjs</a></span>
-   <span>💪 Made by <a href="https://twitter.com/apertureless" target="_new">apertureless</a></span>
-   <span>For issues or feature requests visit <a href="https://github.com/apertureless/npm-stats" target="_new">Github</a></span>
+   
+  
   </footer>
 </template>
 
@@ -15,11 +15,11 @@
  
   footer {
     background-color: color(fjord);
-    color: #fff;
+    color:lightgrey;
     font-size: rem(16);
     padding: rem(30) rem(40);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row nowrap;
     
   }
