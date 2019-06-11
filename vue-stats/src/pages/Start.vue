@@ -365,12 +365,12 @@ hr {
 .search_container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: baseline;
-	background-color: lightgray;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	right: 1%;
-	top: 80px;
+	top: 2%;
+	background-color: lightgray;
 }
 .subcontainer {
 	display: flex;
