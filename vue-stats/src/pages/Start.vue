@@ -7,8 +7,6 @@
 			v-if="loaded"
 		/>
 		<div class="container">
-			
-
 			<div class="error-message" v-if="showError">{{ errorMessage }}</div>
 			<hr>
 			<div v-if="loading" class="loading">
@@ -25,19 +23,19 @@
 					<div class="sk-cube sk-cube9"></div>
 				</div>
 			</div>
-
+			<div class="Search__container">
+				<button class="Search__button" @click="requestData">Find</button>
+				<input
+					v-model="package"
+					class="Search__input"
+					@keyup.enter="requestData"
+					placeholder="npm package name"
+					type="search"
+					name="search"
+				>
+			</div>
 			<div class="subcontainer">
-        <div class="search_container">
-				<div class="Search__container">
-					<button class="Search__button" @click="requestData">Find</button>
-					<input
-						v-model="package"
-						class="Search__input"
-						@keyup.enter="requestData"
-						placeholder="npm package name"
-						type="search"
-						name="search"
-					>
+				<div class="search_container">
 					<div class="Search__settings" v-if="showSettings">
 						<datepicker
 							input-class="Search__input"
@@ -55,7 +53,6 @@
 						></datepicker>
 					</div>
 				</div>
-			</div>
 				<div class="chart_container">
 					<div class="Chart__container" v-if="loaded">
 						<div class="Chart__title">
@@ -368,12 +365,12 @@ hr {
 .search_container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: baseline;
+	background-color: lightgray;
 	position: absolute;
-  right:1%;
-  top:2%;
-background-color: lightgray;
+	right: 1%;
+	top: 80px;
 }
 .subcontainer {
 	display: flex;

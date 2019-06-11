@@ -2,6 +2,7 @@
   <div id="app">
     <j-header></j-header>
     <router-view :key="$route.path"></router-view>
+    
     <j-footer></j-footer>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import JHeader from '@/components/Header'
 import JFooter from '@/components/Footer'
+
 export default {
   components: { JHeader, JFooter },
   name: 'app',
