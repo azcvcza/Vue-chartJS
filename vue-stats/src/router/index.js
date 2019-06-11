@@ -18,6 +18,6 @@ export default new Router({
             component: StartPage
         }
     ],
-    mode: 'history'
+    //mode: 'history' -> this made bundle failed 
 
 })
